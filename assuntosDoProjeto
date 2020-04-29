@@ -1,0 +1,46 @@
+# ads_projeto
+Código do projeto e suas conexões
+
+Parte do código do banco, basta rodar o código abaixo no banco para criar:
+
+CREATE SCHEMA `databaseprojeto` ;
+
+CREATE TABLE `databaseprojeto`.`tabelacolaborador` (
+  `idColaborador` INT NOT NULL AUTO_INCREMENT,
+  `nomeColaorador` VARCHAR(45) NULL,
+  `sobrenomeColaborador` VARCHAR(45) NULL,
+  `e-mailColaborador` VARCHAR(45) NULL,
+  `senhaColaborador` VARCHAR(45) NULL,
+  `cpfColaborador` VARCHAR(45) NULL,
+  PRIMARY KEY (`idColaborador`));
+
+CREATE TABLE `databaseprojeto`.`tabelaprojeto` (
+  `idprojeto` INT NOT NULL AUTO_INCREMENT,
+  `nomedocliente` VARCHAR(45) NOT NULL,
+  `tituloprojeto` VARCHAR(45) NOT NULL,
+  `temaprojeto` VARCHAR(45) NOT NULL,
+  `descricaoesperada` VARCHAR(45) NULL,
+  `descricaomotivacao` VARCHAR(45) NULL,
+  `descricaoeconomica` VARCHAR(45) NULL,
+  PRIMARY KEY (`idprojeto`));
+
+CREATE TABLE `databaseprojeto`.`tabelacliente` (
+  `idcliente` INT NOT NULL,
+  `nomecliente` VARCHAR(45) NULL,
+  `sobrenomecliente` VARCHAR(45) NULL,
+  `emailcliente` VARCHAR(45) NULL,
+  `senhacliente` VARCHAR(45) NULL,
+  PRIMARY KEY (`idcliente`));
+  
+CREATE TABLE `databaseprojeto`.`tabelafornecedor` (
+  `idfornecedor` INT NOT NULL,
+  `nomefantasia` VARCHAR(45) NULL,
+  `razaosocial` VARCHAR(45) NULL,
+  `cnpj` VARCHAR(45) NULL,
+  `cepfornecedor` VARCHAR(45) NULL,
+  `bairrofornecedor` VARCHAR(45) NULL,
+  `enderecofornecedor` VARCHAR(45) NULL,
+  `cidadefornecedor` VARCHAR(45) NULL,
+  `telefonefornecedor` VARCHAR(45) NULL,
+  PRIMARY KEY (`idfornecedor`));
+
