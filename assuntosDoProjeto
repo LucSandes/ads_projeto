@@ -22,6 +22,7 @@ CREATE TABLE `databaseprojeto`.`tabelaprojeto` (
   `descricaoesperada` VARCHAR(45) NULL,
   `descricaomotivacao` VARCHAR(45) NULL,
   `descricaoeconomica` VARCHAR(45) NULL,
+  `duracao` VARCHAR(45) NULL,
   PRIMARY KEY (`idprojeto`));
 
 CREATE TABLE `databaseprojeto`.`tabelacliente` (
