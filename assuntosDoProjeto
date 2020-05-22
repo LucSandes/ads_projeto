@@ -7,7 +7,7 @@ CREATE SCHEMA `databaseprojeto` ;
 
 CREATE TABLE `databaseprojeto`.`tabelacolaborador` (
   `idColaborador` INT NOT NULL AUTO_INCREMENT,
-  `nomeColaorador` VARCHAR(45) NULL,
+  `nomeColaborador` VARCHAR(45) NULL,
   `sobrenomeColaborador` VARCHAR(45) NULL,
   `e-mailColaborador` VARCHAR(45) NULL,
   `senhaColaborador` VARCHAR(45) NULL,
